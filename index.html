@@ -18,32 +18,39 @@
     <img class="logo" src="assets/logo.gif">
     <main class="principal">
         <section class="section1">
-            <div class="caixas">
-                <p class="paragrafo1">Converter <b>de</b></p>
-                <select class="select1 select">
-                    <option value="Real"> R$ Real Brasileiro</option>
-                </select>
-            </div>
+            <section class="section-caixas">
+                <div class="caixas caixa1">
+                    <p class="paragrafo1">Converter <b>de</b></p>
+                    <select class="first-currency-select select">
+                        <option value="Real1"> R$ Real Brasileiro</option>
+                        <option value="Dolar1"> US$ Dólar Americano</option>
+                        <option value="Euro1"> € Euro</option>
+                        <option value="Libra1"> £ Libra</option>
+                        <option value="Bitcoin1">₿ Bitcoin</option>
+                    </select>
+                </div>
 
-            <div class="caixas">
-                <p class="paragrafo2">Converter <b>para</b></p>
-                <select class="currency-select select">
-                    <option value="Dolar"> US$ Dólar Americano</option>
-                    <option value="Euro"> € Euro</option>
-                    <option value="Libra"> £ Libra</option>
-                    <option value="Bitcoin">₿ Bitcoin</option>
-                </select>
-            </div>
-            <div class="caixas">
-                <p class="paragrafo3"><b>Valor</b></p>
-                <input class="select input-currency" placeholder=" R$ 10.000,00">
-            </div>
+                <div class="caixas caixa2">
+                    <p class="paragrafo2">Converter <b>para</b></p>
+                    <select class="second-currency-select select">
+                        <option value="Dolar2"> US$ Dólar Americano</option>
+                        <option value="Real2"> R$ Real Brasileiro</option>
+                        <option value="Euro2"> € Euro</option>
+                        <option value="Libra2"> £ Libra</option>
+                        <option value="Bitcoin2">₿ Bitcoin</option>
+                    </select>
+                </div>
+                <div class="caixas caixa3">
+                    <p class="paragrafo3"><b>Valor</b></p>
+                    <input class="select valor-digitado" placeholder=" R$ 10.000,00">
+                </div>
+            </section>
             <br>
             <br>
-            <button class="convert-button">Converter</button>
+            <button class="botao-de-conversao">Converter</button>
             <section class="section2">
                 <img class="imagem2" src="assets/brasil 2.png" alt="Real-brasileiro">
-                <p class="paragrafos">Real</p>
+                <p id="moedas" class="paragrafos preal">Real</p>
                 <br>
                 <p class="paragrafos currency-value-to-convert">R$ 0,00</p>
                 <img class="seta" src="assets/Vector.png" alt="seta">
@@ -52,12 +59,12 @@
                 <img class="currency-img" src="assets/estados-unidos (1) 1.png" alt="Dolar-americano">
                 <p class="paragrafos pdolar">Dólar</p>
                 <br>
-                <P class="paragrafos currency-value">US$ 0,00</P>
+                <P class="paragrafos valor-convertido">$ 0,00</P>
             </section>
         </section>
     </main>
 </body>
 
-<script src="./script.js"></script>
+<script src="./script2.js"></script>
 
 </html>

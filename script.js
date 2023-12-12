@@ -1,5 +1,5 @@
 const convertButton = document.querySelector(".convert-button")
-const currencySelect = document.querySelector(".currency-select")
+const currencySelect = document.querySelector(".second-currency-select")
 
 
 const convertValues = async() => {
@@ -16,21 +16,21 @@ const convertValues = async() => {
     const libra = data.GBPBRL.high
     const btc = data.BTCBRL.high
 
-    if (currencySelect.value == "Dolar") {
+    if (currencySelect.value == "Dolar2") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
             style: "currency",
             currency: "USD"
         }).format(inputCurrencyValue / dolar)
     }
 
-    if (currencySelect.value == "Euro") {
+    if (currencySelect.value == "Euro2") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
             style: "currency",
             currency: "EUR"
         }).format(inputCurrencyValue / euro)
     }
 
-    if (currencySelect.value == "Libra") {
+    if (currencySelect.value == "Libra2") {
         currencyValueConverted.innerHTML = new Intl.NumberFormat("en-UK", {
             style: "currency",
             currency: "GBP"
